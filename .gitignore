@@ -1,0 +1,14 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+.idea/
+results
+node_modules
+tmp/
+*.orig
+.DS_Store

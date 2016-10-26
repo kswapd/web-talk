@@ -1,0 +1,31 @@
+{
+  "name": "webtalk",
+  "version": "1.0.0",
+  "description": "web talk app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "echo \"Inited.\" && NODE_ENV=static gulp build",
+    "start": "coffee app.coffee"
+  },
+  "keywords": [
+    "web",
+    "talk"
+  ],
+  "author": "kxw",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.11.1",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "config": "^1.17.1",
+    "run-sequence": "^1.0.2",
+    "stir-template": "^0.1.4"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.3"
+  }
+}
