@@ -11,8 +11,8 @@ gulp.task 'html', (cb) ->
   gutil.log "gulp start html work, get config.appDomain=#{config.appDomain}"
   template = require './template'
   html = template(config)
-  fs.writeFile 'build/index.html', html, cb
-gulp.task 'appjs', (cb) ->
+  fs.writeFile 'public/index.html', html, cb
+gulp.task 'webpack_build', (cb) ->
   gutil.log "webpack start"
   webpack (webpack_file()), (err, stats) ->
     if err
@@ -22,5 +22,5 @@ gulp.task 'appjs', (cb) ->
 
 gulp.task 'build', (cb) ->
   gutil.log "gulp task start in #{env} mode."
-  sequence 'html', 'appjs', cb
+  sequence 'webpack_build', 'html', cb
   

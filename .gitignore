@@ -11,5 +11,6 @@ results
 node_modules
 tmp/
 *.orig
+dump.*
 .DS_Store
 public/app.bundle.js

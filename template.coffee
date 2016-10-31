@@ -1,7 +1,7 @@
 fs = require 'fs'
 stir = require 'stir-template'
 
-
+bundle = fs.readFileSync 'public/app.bundle.js'
 {html, head, title, body, script, meta, link, div} = stir
 style = stir.createFactory 'style'
 
@@ -25,5 +25,10 @@ module.exports = (config) ->
         meta property: 'og:title', content: 'BIM | 此刻，爱上工作'
         meta property: 'og:type', content: 'website'
         meta property: 'og:url', content: 'https://bim.com'
-      body null
+      body null,
+        div id:'example'
+        div id:'example2'
+        script src: 'app.bundle.js'
+        #script crossorigin:"anonymous", src: 'app.bundle.js'
+        #script null, bundle
         
