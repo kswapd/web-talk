@@ -2,7 +2,7 @@
 #cd /src/talk-web && gulp build 
 
 log="talk.log"
-token="web-talk"
+token="testtalk"
 rm $log
 pid=`ps -ef|grep $token | grep -v "grep"|awk '{print $2}'`
 
