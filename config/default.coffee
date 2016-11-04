@@ -6,7 +6,7 @@ appDomain = 'localhost'
 
 module.exports =
   env: 'static'
-  title:'Hi,web-talk app'
+  title:'Hi,web-talk appp'
   appDomain: appDomain
   isGuest: isGuest
   version: require('../package.json').version

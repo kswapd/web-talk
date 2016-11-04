@@ -9,4 +9,4 @@ module.exports = React.createClass
     userId: T.string.isRequired
   render: ->
     #React.DOM.div null, message
-    div className: 'client-download', 'im download component class'
+    div className: 'client-download', "ccomponent class #{@props.teamId}"

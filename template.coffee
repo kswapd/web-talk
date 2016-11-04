@@ -1,7 +1,7 @@
 fs = require 'fs'
 stir = require 'stir-template'
 
-bundle = fs.readFileSync 'public/app.bundle.js'
+#bundle = fs.readFileSync 'public/app.bundle.js'
 {html, head, title, body, script, meta, link, div} = stir
 style = stir.createFactory 'style'
 

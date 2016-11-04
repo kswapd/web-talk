@@ -20,8 +20,8 @@
       }, 'Im sub1'), div({
         className: 'sub2'
       }, 'Im sub2'), ClientDownload({
-        teamId: '124',
-        userId: '255'
+        userId: 'aa',
+        teamId: '124'
       }));
     }
   });

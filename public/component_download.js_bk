@@ -19,7 +19,7 @@
     render: function() {
       return div({
         className: 'client-download'
-      }, 'im download component class');
+      }, 'component class');
     }
   });
 
