@@ -25,6 +25,7 @@ module.exports = (config) ->
         meta property: 'og:title', content: 'BIM | 此刻，爱上工作'
         meta property: 'og:type', content: 'website'
         meta property: 'og:url', content: 'https://bim.com'
+        link rel: 'stylesheet', type: 'text/css', href: 'a.css'
       body null,
         div id:'example'
         div id:'example2'
